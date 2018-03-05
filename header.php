@@ -16,7 +16,7 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Home</a>
+          <a class="blog-nav-item active" href="#">Home</a> <!-- Deletar essa parte pra testar o navegador de menu -->
           <?php wp_list_pages('&title_li'); ?>
         </nav>
       </div>
