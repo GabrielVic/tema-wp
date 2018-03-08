@@ -174,3 +174,22 @@
 .blog-nav li a {
     color: #fff;
 }
+
+/*MARCAR O MENU*/
+
+li.current-menu-item {
+  background: #333;
+}
+
+li.current-menu-item a:hover {
+    text-decoration: underline;
+}
+
+li.current-menu-item a:focus{
+  text-decoration: underline;
+}
+
+li.current-menu-item a:active{
+  text-decoration: underline;
+  background:#ccc;
+}
