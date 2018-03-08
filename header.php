@@ -16,8 +16,40 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Home</a> <!-- Deletar essa parte pra testar o navegador de menu -->
-          <?php wp_list_pages('&title_li'); ?>
+          <?php 
+				     wp_nav_menu( array(
+
+            ‘menu’ => ‘meu_menu’,
+
+            ‘theme_location’ => ‘meu_menu’,
+
+            ‘container’ => ‘div’,
+
+            ‘container_class’ => ‘classe_do_container’,
+
+            ‘container_id’ => ‘id_do_container’,
+
+            ‘menu_class’ => ‘classe_do_menu’,
+
+            ‘echo’ => true,
+
+            ‘menu_id’ => ‘id_do_menu’,
+
+            ‘before’ => ”,
+
+            ‘after’ => ”,
+
+            ‘link_before’ => ”,
+
+            ‘link_after’ => ”,
+
+            ‘depth’ => 0,
+
+            ‘walker’ => ”,
+
+				) );
+
+				?>
         </nav>
       </div>
     </div>
